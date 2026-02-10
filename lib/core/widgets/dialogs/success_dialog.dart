@@ -19,13 +19,15 @@ void showSuccessDialog(BuildContext context, void Function()? onPressed) {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.done, color: Colors.green),
+              Icon(Icons.done, color: Colors.green, size: 32.0),
               AppGap.h16,
               Text(
                 "Operation completed successfully!",
-                style: Theme.of(
-                  context,
-                ).textTheme.bodyMedium!.copyWith(color: Colors.green),
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               AppGap.h24,
               TextButton(onPressed: onPressed, child: Text("Okay")),

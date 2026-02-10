@@ -18,13 +18,14 @@ void showErrorDialog(BuildContext context, String errorMessage) {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.close, color: Colors.red),
+              Icon(Icons.close, color: Colors.red, size: 32.0),
               AppGap.h16,
               Text(
                 "The operation failed",
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall!.copyWith(color: Colors.red),
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               AppGap.h8,
               Text(errorMessage, style: Theme.of(context).textTheme.labelSmall),

@@ -37,7 +37,7 @@ class PostBlocStateHandler {
     } else if (state.createPostStatus == PostStatus.success) {
       Navigator.pop(context);
       showSuccessDialog(context, () {
-        Navigator.pop(context);
+        Navigator.of(context).popUntil((route) => route.isFirst);
       });
       context.read<PostBloc>().add(GetAllPostsEvent());
     } else if (state.createPostStatus == PostStatus.error) {

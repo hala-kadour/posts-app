@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:posts/core/theme/app_fonts.dart';
 
 import 'app_colors.dart';
 import 'app_text_styles.dart';
@@ -8,7 +9,7 @@ class AppTheme {
 
   static ThemeData getAppTheme() {
     return ThemeData(
-      fontFamily: 'Noto Serif',
+      fontFamily: AppFonts.mainAppFont,
       scaffoldBackgroundColor: AppColors.backgroundColor,
       primaryColor: AppColors.primaryColor,
       brightness: Brightness.light,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:posts/core/widgets/dialogs/confirm_deletion_dialog.dart';
-import 'package:posts/features/posts/presentation/bloc/post_bloc_state_handler.dart';
 
 import '../../../../core/const/gap.dart';
 import '../../domain/entities/post_entity.dart';
